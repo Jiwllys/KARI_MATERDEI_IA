@@ -1,0 +1,38 @@
+Generic single-database configuration.# 🏥 Projeto Kari AI - Inteligência Logística e Saúde Preventiva
+
+A **Kari** é uma solução de inteligência artificial desenvolvida para otimizar o fluxo de agendamentos da rede de saúde Mater Dei. O sistema utiliza Machine Learning e algoritmos de priorização para reduzir a ociosidade (no-show) e garantir que pacientes com maior risco clínico sejam atendidos com prioridade, organizando inclusive agendamentos familiares em blocos logísticos.
+
+## 🚀 Funcionalidades Principais
+
+* **Predição de No-Show:** Modelo de Machine Learning que prevê a probabilidade de falta de um paciente.
+* **Fila de Prioridade Inteligente:** Algoritmo que cruza o Risco de Saúde (60%) com a Assiduidade (40%).
+* **Agendamento Familiar em Bloco:** Identifica membros da mesma família e sugere horários sequenciais com intervalos de 20 minutos.
+* **Ranking de Urgência por Grupo:** Prioriza famílias inteiras no "horário nobre" do hospital baseando-se no bem-estar coletivo.
+* **Módulo de Recomendação Ativa:** Sugere exames e check-ups (Ex: Cardiovascular ou Geriátrico) com base no perfil do paciente.
+
+## 🛠️ Tecnologias Utilizadas
+
+* **Linguagem:** Python 3.x
+* **Banco de Dados:** PostgreSQL (Persistência e Views para Dashboards)
+* **Machine Learning:** Scikit-Learn (Random Forest Classifier)
+* **Manipulação de Dados:** Pandas e SQLAlchemy
+* **Visualização:** Looker Studio / Streamlit
+
+## 📂 Estrutura do Projeto
+
+* `treina_no_show.py`: Treina o modelo de IA que prevê faltas.
+* `calcula_prioridade.py`: Executa o algoritmo de pesos para definir a fila individual.
+* `prioridade_familiar.py`: Calcula o score médio de grupos familiares para priorização de blocos.
+* `agendamento_familiar.py`: Organiza a logística de horários sequenciais (janelas de 20 min).
+* `recomenda_acao.py`: Gera sugestões de saúde preventiva baseadas nos scores de risco.
+* `backup_kari.sql`: Script de backup do banco de dados com a estrutura de tabelas e views.
+* `.env`: Arquivo de configuração para conexão segura com o banco de dados.
+
+## ⚙️ Como Executar
+
+1. **Configurar o Banco de Dados:**
+   Importe o arquivo `backup_kari.sql` no seu PostgreSQL e configure as credenciais no arquivo `.env`.
+
+2. **Instalar Dependências:**
+   ```bash
+   pip install -r requirements.txt

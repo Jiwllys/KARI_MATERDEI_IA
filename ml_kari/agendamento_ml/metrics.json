@@ -1,0 +1,17 @@
+{
+    "metrics": {
+        "roc_auc": 0.6198248407643313,
+        "recall": 0.6458333333333334
+    },
+    "feature_importance": {
+        "lead_time_dias": 0.1399796104635269,
+        "priority_score": 0.08884873115391809,
+        "risco_paciente": 0.11560061587000509,
+        "hora_num": 0.12995892003174125,
+        "categoria_hora_encoded": 0.010365806286890104,
+        "dia_semana": 0.19483743733202516,
+        "taxa_falta_hist": 0.05423612834058214,
+        "risco_por_antecedencia": 0.10677025771243977,
+        "mes_consulta": 0.15940249280887153
+    }
+}

@@ -1,0 +1,501 @@
+﻿paciente_id,nome,cpf,sexo,telefone,data_nasc,risco_score,qtd_comorbidades,especialidade,status_historico,doenca_principal,recomendacao_ia,prioridade_final,idade_real,custo_oportunidade,faixa_etaria
+1,João Felipe Borges,00000000001,F,+55 11 6975 2858,1983-01-01,65.95,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,79.57,43.0,0.0,Adulto
+2,Carolina Sousa,00000000002,F,0500 288 2202,1954-01-01,44.72,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,42.83,72.0,0.0,Sênior (60+)
+3,Dante Abreu,00000000003,M,41 5121-7489,1975-01-01,51.15,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,54.69,51.0,0.0,Adulto
+4,Enzo Gabriel da Mata,00000000004,F,84 3396-0145,1936-01-01,55.36,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,65.22,90.0,0.0,Sênior (60+)
+5,Carolina Marques,00000000005,F,0800-637-5912,1970-01-01,18.38,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,11.03,56.0,0.0,Adulto
+6,Ian Melo,00000000006,M,(041) 7168 4732,1975-01-01,65.44,5,pediatria,realizado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,79.26,51.0,0.0,Adulto
+7,Felipe Fogaça,00000000007,F,+55 (031) 2149 8383,1968-01-01,42.21,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,57.33,58.0,0.0,Adulto
+8,Sra. Hadassa Silveira,00000000008,M,31 2008 5328,1945-01-01,41.42,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,48.85,81.0,0.0,Sênior (60+)
+9,Isadora Santos,00000000009,F,+55 (081) 2384 7350,1938-01-01,54.64,1,pediatria,realizado,Hipertensão Leve,🔍 Exames Preventivos,40.78,88.0,0.0,Sênior (60+)
+10,Ana Clara da Mota,00000000010,M,(051) 3239-3661,1947-01-01,32.96,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,59.78,79.0,0.0,Sênior (60+)
+11,Luara Marques,00000000011,F,+55 (011) 4973-3359,1958-01-01,33.51,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,28.11,68.0,0.0,Sênior (60+)
+12,Anna Liz Barbosa,00000000012,F,+55 (021) 6001-8733,2003-01-01,48.73,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,29.24,23.0,0.0,Adulto
+13,Ana Vitória Albuquerque,00000000013,F,(021) 6846-5093,1962-01-01,37.43,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.46,64.0,0.0,Sênior (60+)
+14,Dra. Mariah Melo,00000000014,M,21 4297 0806,1955-01-01,28.78,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,49.27,71.0,0.0,Sênior (60+)
+15,Alexia Pinto,00000000015,F,+55 (021) 3184 7518,1960-01-01,22.75,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,13.65,66.0,0.0,Sênior (60+)
+16,Lucca Cardoso,00000000016,F,(061) 5650 3970,1991-01-01,28.8,2,ginecologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,33.28,35.0,0.0,Adulto
+17,Rodrigo Vasconcelos,00000000017,F,+55 51 3055 4144,1939-01-01,46.91,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,68.15,87.0,0.0,Sênior (60+)
+19,Maria Laura Duarte,00000000019,F,+55 71 6465 3610,1956-01-01,62.53,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,45.52,70.0,0.0,Sênior (60+)
+20,Alícia Dias,00000000020,M,(051) 0616-3288,1945-01-01,65.09,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,39.05,81.0,0.0,Sênior (60+)
+21,Nina Fernandes,00000000021,M,0900-801-2558,2000-01-01,52.3,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,55.38,26.0,0.0,Adulto
+22,Brenda Andrade,00000000022,M,(061) 6931-9453,1958-01-01,29.44,3,cardiologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,41.66,68.0,0.0,Sênior (60+)
+23,Murilo Rezende,00000000023,M,(084) 9668-8075,1975-01-01,34.64,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,20.78,51.0,0.0,Adulto
+24,Isabela Porto,00000000024,M,31 6026 0110,1947-01-01,25.37,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,23.22,79.0,0.0,Sênior (60+)
+25,Apollo Cassiano,00000000025,M,+55 (031) 7855 3290,1943-01-01,58.72,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,35.23,83.0,0.0,Sênior (60+)
+26,Yasmin Montenegro,00000000026,M,84 7700-1530,2004-01-01,18.99,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,19.39,22.0,0.0,Adulto
+27,Nina da Cruz,00000000027,M,+55 71 8746-0102,1957-01-01,38.1,4,cardiologia,no_show,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.86,69.0,250.0,Sênior (60+)
+28,Maria Isis da Conceição,00000000028,M,(061) 8855 0752,1944-01-01,58.59,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,67.15,82.0,0.0,Sênior (60+)
+29,Emanuel Rodrigues,00000000029,F,+55 11 3917-0598,1938-01-01,44.6,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,34.76,88.0,0.0,Sênior (60+)
+30,Heitor Pacheco,00000000030,M,61 2204-2906,1948-01-01,32.39,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,59.43,78.0,0.0,Sênior (60+)
+31,Natália Cardoso,00000000031,F,+55 21 2565 6609,1943-01-01,52.01,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,63.21,83.0,0.0,Sênior (60+)
+32,Srta. Bruna Souza,00000000032,M,+55 41 4970 7148,1957-01-01,31.76,3,cardiologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,43.06,69.0,0.0,Sênior (60+)
+33,Nicolas Gomes,00000000033,F,+55 (041) 0360-1706,1982-01-01,61.06,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,44.64,44.0,0.0,Adulto
+34,Liz Guerra,00000000034,F,+55 81 1952-7188,1971-01-01,48.19,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,36.91,55.0,0.0,Adulto
+35,Caroline Marques,00000000035,F,(011) 6507-8840,2004-01-01,44.2,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,58.52,22.0,0.0,Adulto
+36,Yago Novais,00000000036,F,41 4105-6512,1981-01-01,15.23,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,17.14,45.0,0.0,Adulto
+37,Sr. Rael da Cunha,00000000037,F,0900-608-4153,1981-01-01,42.57,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,33.54,45.0,0.0,Adulto
+38,Leonardo Leão,00000000038,M,+55 (021) 8831 5520,1972-01-01,58.63,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,51.18,54.0,0.0,Adulto
+39,Juan Correia,00000000039,M,0300 399 1708,1938-01-01,58.37,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,35.02,88.0,0.0,Sênior (60+)
+40,Benicio Novais,00000000040,M,+55 81 9058 9863,1961-01-01,33.63,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,52.18,65.0,0.0,Sênior (60+)
+41,Sr. Raul da Conceição,00000000041,M,+55 84 8330 0343,2003-01-01,39.21,2,ortopedia,agendado,Asma / Obesidade,✅ Monitoramento Anual,39.53,23.0,0.0,Adulto
+42,Hadassa Teixeira,00000000042,M,51 8387 3416,1997-01-01,43.18,1,cardiologia,realizado,Hipertensão Leve,🔍 Exames Preventivos,33.91,29.0,0.0,Adulto
+43,Daniel Sá,00000000043,F,(081) 9339 3537,1998-01-01,43.64,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,34.18,28.0,0.0,Adulto
+44,Ana Laura Vargas,00000000044,F,(051) 2674-2487,1976-01-01,38.3,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,46.98,50.0,0.0,Adulto
+45,Maya da Rosa,00000000045,F,0800 556 9959,1981-01-01,64.43,2,ortopedia,agendado,Asma / Obesidade,🔍 Exames Preventivos,54.66,45.0,0.0,Adulto
+46,Dra. Mariana Melo,00000000046,M,+55 (011) 7798-7176,1981-01-01,45.99,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,67.59,45.0,0.0,Adulto
+47,Aurora Mendes,00000000047,M,+55 51 4018 6063,1950-01-01,34.11,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,20.47,76.0,0.0,Sênior (60+)
+48,Benício da Cruz,00000000048,F,11 1695-3632,1943-01-01,40.3,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,24.18,83.0,0.0,Sênior (60+)
+49,Agatha Cunha,00000000049,F,(081) 8385-9587,1956-01-01,71.33,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,66.8,70.0,0.0,Sênior (60+)
+50,Isis da Costa,00000000050,M,31 8002 0771,1996-01-01,58.9,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,59.34,30.0,0.0,Adulto
+51,Carlos Eduardo Leão,00000000051,M,71 8100-0165,1953-01-01,53.89,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,40.33,73.0,0.0,Sênior (60+)
+52,Rhavi Pereira,00000000052,M,+55 (031) 9314 8553,1993-01-01,45.93,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,51.56,33.0,0.0,Adulto
+53,José Miguel Borges,00000000053,M,0900-900-2444,1952-01-01,27.27,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,16.36,74.0,0.0,Sênior (60+)
+54,Ryan da Costa,00000000054,M,81 8539 3284,1947-01-01,55.58,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,73.35,79.0,0.0,Sênior (60+)
+55,Sofia Vieira,00000000055,M,0500-594-1196,1970-01-01,37.75,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.65,56.0,0.0,Adulto
+56,Maria Alice Barbosa,00000000056,F,(081) 0378-7176,1996-01-01,40.31,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,32.19,30.0,0.0,Adulto
+57,Sra. Eloá Mendonça,00000000057,F,+55 84 7459 2391,1998-01-01,22.93,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,45.76,28.0,0.0,Adulto
+58,Dra. Olívia Vieira,00000000058,M,+55 (081) 7844 0415,1955-01-01,29.03,1,ginecologia,realizado,Hipertensão Leve,✅ Monitoramento Anual,25.42,71.0,0.0,Sênior (60+)
+59,Caroline Lopes,00000000059,F,11 3658 2530,1968-01-01,47.87,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,44.72,58.0,0.0,Adulto
+60,Luiz Henrique Ribeiro,00000000060,F,+55 51 0641 8420,1940-01-01,40.03,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,48.02,86.0,0.0,Sênior (60+)
+61,Rodrigo Melo,00000000061,F,(084) 4584-0440,1960-01-01,41.01,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,48.61,66.0,0.0,Sênior (60+)
+62,Yan Leão,00000000062,M,(051) 2154 6109,1986-01-01,42.32,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,49.39,40.0,0.0,Adulto
+63,Ana Vitória Cirino,00000000063,M,0800-523-7761,1986-01-01,41.03,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,64.62,40.0,0.0,Adulto
+64,Bernardo Siqueira,00000000064,F,21 1273 8679,1947-01-01,64.46,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,62.68,79.0,0.0,Sênior (60+)
+65,Dr. Lucas Brito,00000000065,M,(011) 0392 1389,1966-01-01,48.57,2,ortopedia,agendado,Asma / Obesidade,🔍 Exames Preventivos,45.14,60.0,0.0,Sênior (60+)
+66,Lunna Costela,00000000066,F,+55 (041) 5059-0766,1942-01-01,28.74,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,17.24,84.0,0.0,Sênior (60+)
+67,Thiago Casa Grande,00000000067,F,(051) 0928-5107,1999-01-01,59.4,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,59.64,27.0,0.0,Adulto
+68,Yan Costa,00000000068,M,31 9134-5491,1944-01-01,30.17,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,50.1,82.0,0.0,Sênior (60+)
+69,Ísis Alves,00000000069,M,+55 51 5569 6475,1969-01-01,66.97,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,56.18,57.0,0.0,Adulto
+70,Ana Vitória Duarte,00000000070,M,51 8160 8159,1958-01-01,54.59,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,32.75,68.0,0.0,Sênior (60+)
+71,Sabrina Sampaio,00000000071,M,31 2877-8860,2004-01-01,40.22,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,64.13,22.0,0.0,Adulto
+72,Luiz Miguel Costa,00000000072,M,+55 (081) 4922-0227,1948-01-01,73.74,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,68.24,78.0,0.0,Sênior (60+)
+73,Melina Vargas,00000000073,F,84 5750-3516,1981-01-01,30.77,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,50.46,45.0,0.0,Adulto
+74,Ana Pastor,00000000074,F,+55 41 0925-5215,1969-01-01,28.97,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,25.38,57.0,0.0,Adulto
+75,Paulo Oliveira,00000000075,F,11 1033-4846,1964-01-01,54.91,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,48.95,62.0,0.0,Sênior (60+)
+76,Sra. Helena da Conceição,00000000076,M,+55 71 2004-0592,1972-01-01,48.74,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,53.24,54.0,0.0,Adulto
+77,Cauã Silva,00000000077,M,84 9654-8163,1970-01-01,68.69,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,81.21,56.0,0.0,Adulto
+78,Giovanna Mendes,00000000078,M,+55 (084) 1931-6584,1936-01-01,47.31,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,28.39,90.0,0.0,Sênior (60+)
+79,Srta. Stephany Vieira,00000000079,M,61 1901 0956,2000-01-01,46.08,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,27.65,26.0,0.0,Adulto
+80,Nathan Andrade,00000000080,M,+55 (084) 2597-2668,1956-01-01,61.88,4,ginecologia,no_show,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,69.13,70.0,250.0,Sênior (60+)
+81,Srta. Raquel Oliveira,00000000081,M,+55 (061) 1857 2585,1946-01-01,65.32,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,39.19,80.0,0.0,Sênior (60+)
+82,Dr. Vitor Gabriel Jesus,00000000082,M,+55 84 8859-1201,2004-01-01,45.59,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,67.35,22.0,0.0,Adulto
+83,Léo Fonseca,00000000083,M,+55 41 0366 9399,1982-01-01,63.84,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,70.3,44.0,0.0,Adulto
+84,Mirella Almeida,00000000084,M,(071) 5802-4065,1988-01-01,26.05,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,55.63,38.0,0.0,Adulto
+85,Augusto Pires,00000000085,M,(051) 8340-1841,1954-01-01,35.36,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,53.22,72.0,0.0,Sênior (60+)
+86,Ana Laura Albuquerque,00000000086,F,11 5567-4770,1973-01-01,31.73,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,43.04,53.0,0.0,Adulto
+87,Camila Viana,00000000087,F,(071) 4011 2590,1979-01-01,38.31,1,ortopedia,agendado,Hipertensão Leve,✅ Monitoramento Anual,30.99,47.0,0.0,Adulto
+88,Fernando Siqueira,00000000088,M,51 4722 6361,1993-01-01,62.7,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,77.62,33.0,0.0,Adulto
+89,Sr. Samuel Oliveira,00000000089,M,+55 (041) 1086-1751,1958-01-01,54.82,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,64.89,68.0,0.0,Sênior (60+)
+90,Vitória Camargo,00000000090,M,(081) 9372 9809,1954-01-01,56.86,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,74.12,72.0,0.0,Sênior (60+)
+91,Srta. Ana Beatriz Araújo,00000000091,M,+55 (031) 5659 3680,1975-01-01,21.25,2,ortopedia,agendado,Asma / Obesidade,✅ Monitoramento Anual,28.75,51.0,0.0,Adulto
+92,Maria Cecília Machado,00000000092,M,+55 21 7797 3072,1967-01-01,35.0,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,45.0,59.0,0.0,Adulto
+93,Vicente da Mota,00000000093,M,0300 589 5935,1954-01-01,64.82,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,70.89,72.0,0.0,Sênior (60+)
+94,Isabelly Sousa,00000000094,M,+55 81 6587-5840,1949-01-01,61.95,1,ginecologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,45.17,77.0,0.0,Sênior (60+)
+95,Srta. Milena Costa,00000000095,F,51 7746 0902,1971-01-01,37.27,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.36,55.0,0.0,Adulto
+96,Matheus Caldeira,00000000096,F,(061) 3570 1252,1962-01-01,24.39,2,ortopedia,agendado,Asma / Obesidade,✅ Monitoramento Anual,30.63,64.0,0.0,Sênior (60+)
+97,Dra. Elisa Melo,00000000097,F,+55 (011) 9551 4564,1989-01-01,22.59,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,37.55,37.0,0.0,Adulto
+98,Ana Clara Brito,00000000098,F,21 8736-0299,1938-01-01,53.56,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,48.14,88.0,0.0,Sênior (60+)
+99,Nicole Oliveira,00000000099,M,0800-327-6010,1954-01-01,33.45,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,52.07,72.0,0.0,Sênior (60+)
+100,Alexia Pinto,00000000100,M,(081) 8169-4264,1963-01-01,27.74,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,56.64,63.0,0.0,Sênior (60+)
+101,Ana Cecília Sá,00000000101,M,+55 (031) 9275-5293,2000-01-01,20.52,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,36.31,26.0,0.0,Adulto
+102,João Felipe Fernandes,00000000102,F,31 4636 4779,1956-01-01,55.92,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,41.55,70.0,0.0,Sênior (60+)
+103,Maysa Lopes,00000000103,M,+55 31 1008-3236,1979-01-01,47.89,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,28.73,47.0,0.0,Adulto
+104,Maria Isis Albuquerque,00000000104,F,81 8345 9276,1942-01-01,28.73,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,49.24,84.0,0.0,Sênior (60+)
+105,Julia Andrade,00000000105,M,(081) 0235 8910,1997-01-01,19.33,2,ortopedia,agendado,Asma / Obesidade,✅ Monitoramento Anual,27.6,29.0,0.0,Adulto
+106,Liz da Luz,00000000106,F,51 0835 2546,1949-01-01,58.41,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,75.05,77.0,0.0,Sênior (60+)
+107,Miguel Pires,00000000107,M,+55 31 1706 4502,2003-01-01,9.13,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,13.48,23.0,0.0,Adulto
+108,Pietro das Neves,00000000108,M,(051) 0152 2360,1998-01-01,50.28,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,70.17,28.0,0.0,Adulto
+109,Diego Teixeira,00000000109,F,11 6351-5726,1987-01-01,42.73,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,65.64,39.0,0.0,Adulto
+110,Enzo da Cunha,00000000110,M,(081) 8246 0319,1941-01-01,38.01,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.81,85.0,0.0,Sênior (60+)
+111,Laís Nunes,00000000111,M,+55 11 1950 2480,1948-01-01,44.17,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,66.5,78.0,0.0,Sênior (60+)
+112,Maria Flor Porto,00000000112,M,21 8199 8291,1988-01-01,37.5,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,46.5,38.0,0.0,Adulto
+113,João Nogueira,00000000113,M,+55 81 7951 8680,1938-01-01,53.78,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,64.27,88.0,0.0,Sênior (60+)
+114,Pietra Jesus,00000000114,M,21 6822 6370,1971-01-01,44.12,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,26.47,55.0,0.0,Adulto
+115,Pedro Borges,00000000115,M,0800 733 9891,1964-01-01,67.98,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,80.79,62.0,0.0,Sênior (60+)
+116,Maria Flor Vargas,00000000116,F,+55 (084) 5060 5353,1946-01-01,74.73,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,60.84,80.0,0.0,Sênior (60+)
+117,Mateus da Cunha,00000000117,M,+55 (031) 8765 3742,1972-01-01,31.87,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,59.12,54.0,0.0,Adulto
+118,José Miguel Novais,00000000118,F,+55 (041) 5139 2331,2001-01-01,13.29,2,ginecologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,23.97,25.0,0.0,Adulto
+119,José Miguel da Paz,00000000119,M,+55 (011) 4094-6212,1981-01-01,16.91,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,10.15,45.0,0.0,Adulto
+120,Srta. Natália Nogueira,00000000120,F,+55 11 0896-1519,1974-01-01,68.12,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,72.87,52.0,0.0,Adulto
+121,Sophie Borges,00000000121,F,21 9854-2814,1999-01-01,58.97,3,pediatria,realizado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,59.38,27.0,0.0,Adulto
+122,Kevin Nunes,00000000122,F,(081) 7789 9487,1999-01-01,32.04,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,19.22,27.0,0.0,Adulto
+123,Ana Lívia da Cruz,00000000123,F,(021) 2149 4928,1948-01-01,53.38,2,cardiologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,48.03,78.0,0.0,Sênior (60+)
+124,Bruna Pinto,00000000124,F,11 4457 3802,1960-01-01,32.55,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,51.53,66.0,0.0,Sênior (60+)
+125,Caroline Cirino,00000000125,M,+55 (011) 3481-9743,1937-01-01,54.48,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,56.69,89.0,0.0,Sênior (60+)
+126,Sra. Maria Sophia Teixeira,00000000126,M,+55 (051) 5347 2538,1993-01-01,39.83,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,23.9,33.0,0.0,Adulto
+127,Valentina Melo,00000000127,M,+55 (041) 3253 8560,1967-01-01,29.82,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,57.89,59.0,0.0,Adulto
+128,Vitor Gabriel Novaes,00000000128,F,+55 (041) 1814-4761,1972-01-01,39.31,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,31.59,54.0,0.0,Adulto
+129,Antonella Araújo,00000000129,F,(021) 8504 8674,1982-01-01,25.69,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,39.41,44.0,0.0,Adulto
+131,Maitê das Neves,00000000131,M,+55 (051) 2113-1342,1988-01-01,36.46,2,ginecologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,37.88,38.0,0.0,Adulto
+132,Benjamim Dias,00000000132,F,+55 (071) 4921-3036,1970-01-01,58.74,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,35.24,56.0,0.0,Adulto
+133,Laís Montenegro,00000000133,F,(084) 8521-1081,1955-01-01,61.24,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,68.74,71.0,0.0,Sênior (60+)
+134,Luigi Monteiro,00000000134,F,0300 197 1758,1971-01-01,21.22,2,ortopedia,agendado,Asma / Obesidade,✅ Monitoramento Anual,28.73,55.0,0.0,Adulto
+135,Aurora Marques,00000000135,F,(021) 9714 0052,1941-01-01,69.99,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,65.99,85.0,0.0,Sênior (60+)
+136,Rafaela da Costa,00000000136,F,0800 402 9156,1991-01-01,56.16,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,73.7,35.0,0.0,Adulto
+137,Marcelo Sousa,00000000137,M,51 5363 3048,2000-01-01,40.89,2,neurologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,40.53,26.0,0.0,Adulto
+138,Henry Gabriel Porto,00000000138,M,+55 21 9928 1505,2001-01-01,40.32,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,56.19,25.0,0.0,Adulto
+139,Mateus Ribeiro,00000000139,F,+55 11 8517-4348,1965-01-01,67.68,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,80.61,61.0,0.0,Sênior (60+)
+140,Brenda Martins,00000000140,M,+55 (041) 8189 7898,1967-01-01,28.71,0,cardiologia,realizado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,17.23,59.0,0.0,Adulto
+141,Kevin Vasconcelos,00000000141,F,+55 31 2999 1569,1939-01-01,74.82,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,76.89,87.0,0.0,Sênior (60+)
+142,Sra. Nicole Vargas,00000000142,F,0900-221-2100,1954-01-01,42.64,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,65.58,72.0,0.0,Sênior (60+)
+143,Srta. Hellena Ferreira,00000000143,F,(081) 2238-2640,1963-01-01,61.0,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,60.6,63.0,0.0,Sênior (60+)
+144,Eloá Nascimento,00000000144,F,+55 71 5272-9510,1978-01-01,25.38,4,neurologia,no_show,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,47.23,48.0,250.0,Adulto
+145,Milena Cirino,00000000145,M,+55 (021) 5090-5438,1978-01-01,15.48,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,9.29,48.0,0.0,Adulto
+146,Dra. Sofia Borges,00000000146,F,+55 51 9501 8229,1939-01-01,73.34,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,76.0,87.0,0.0,Sênior (60+)
+147,Aurora Freitas,00000000147,M,31 0262-7836,1967-01-01,42.95,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,49.77,59.0,0.0,Adulto
+148,Léo Ribeiro,00000000148,F,+55 (071) 9535-5042,1976-01-01,42.72,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,57.63,50.0,0.0,Adulto
+149,Alexia Correia,00000000149,F,11 5712 0120,1960-01-01,53.26,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,47.96,66.0,0.0,Sênior (60+)
+150,Luiz Miguel Barros,00000000150,M,+55 (084) 5118-3283,1979-01-01,32.78,2,cardiologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,35.67,47.0,0.0,Adulto
+151,Melina Pastor,00000000151,F,+55 61 1290 5122,1967-01-01,65.46,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,47.28,59.0,0.0,Adulto
+152,Lavínia da Paz,00000000152,F,(084) 6718 8584,1992-01-01,19.64,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,51.78,34.0,0.0,Adulto
+153,Cecilia Araújo,00000000153,M,31 4463-7774,1945-01-01,31.81,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,43.09,81.0,0.0,Sênior (60+)
+154,Juan Barbosa,00000000154,F,+55 (021) 8615-5589,2000-01-01,46.56,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,59.94,26.0,0.0,Adulto
+155,Pedro Henrique Teixeira,00000000155,F,0900 356 9426,1974-01-01,36.21,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,21.73,52.0,0.0,Adulto
+156,Henrique da Rocha,00000000156,M,(051) 6300-7111,1965-01-01,68.23,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,80.94,61.0,0.0,Sênior (60+)
+157,Liz Pires,00000000157,F,+55 (084) 4654-9215,1984-01-01,26.32,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,55.79,42.0,0.0,Adulto
+158,Stella Nunes,00000000158,F,0500-684-2085,1942-01-01,56.16,2,neurologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,49.7,84.0,0.0,Sênior (60+)
+159,Gael Henrique Moreira,00000000159,M,+55 (084) 3555-1206,1952-01-01,62.74,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,45.64,74.0,0.0,Sênior (60+)
+160,Evelyn Farias,00000000160,M,21 2814 8599,1979-01-01,35.41,2,cardiologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,37.25,47.0,0.0,Adulto
+161,Benjamin Campos,00000000161,F,(061) 8479 7598,1967-01-01,42.14,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,33.28,59.0,0.0,Adulto
+162,Rafael Nunes,00000000162,F,+55 71 0031 5058,1988-01-01,14.44,2,cardiologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,24.66,38.0,0.0,Adulto
+163,Dra. Sofia Porto,00000000163,F,+55 81 3381-4619,1951-01-01,46.82,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,28.09,75.0,0.0,Sênior (60+)
+164,Rodrigo da Rocha,00000000164,M,(071) 6539-8952,1972-01-01,48.63,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,61.18,54.0,0.0,Adulto
+165,Luan Nunes,00000000165,M,+55 71 5950-3607,1956-01-01,68.45,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,41.07,70.0,0.0,Sênior (60+)
+166,Apollo da Mata,00000000166,M,+55 41 4078 6787,1942-01-01,39.58,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,23.75,84.0,0.0,Sênior (60+)
+167,Bento Marques,00000000167,M,+55 11 9449-6589,1954-01-01,40.47,2,cardiologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,40.28,72.0,0.0,Sênior (60+)
+168,Thiago Marques,00000000168,M,61 6679 1362,1956-01-01,48.0,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,60.8,70.0,0.0,Sênior (60+)
+169,Gustavo Guerra,00000000169,F,+55 (011) 0686 4341,1986-01-01,50.18,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,30.11,40.0,0.0,Adulto
+170,Bella Alves,00000000170,F,(084) 4327-1862,1939-01-01,52.55,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,55.53,87.0,0.0,Sênior (60+)
+171,Matteo Sousa,00000000171,M,11 3699 5102,1967-01-01,29.2,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,41.52,59.0,0.0,Adulto
+172,Sra. Mariah Albuquerque,00000000172,F,0300 634 5518,2002-01-01,21.14,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,20.68,24.0,0.0,Adulto
+173,Dr. Raul Rios,00000000173,F,+55 71 9492-1609,1950-01-01,66.55,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,47.93,76.0,0.0,Sênior (60+)
+174,Davi Lucas Cavalcanti,00000000174,M,(061) 2218 9980,1940-01-01,38.75,2,ginecologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,39.25,86.0,0.0,Sênior (60+)
+175,Sophia da Mota,00000000175,M,31 7694 4132,1951-01-01,34.83,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,52.9,75.0,0.0,Sênior (60+)
+176,Augusto Caldeira,00000000176,F,+55 51 5929 5138,1997-01-01,22.26,2,cardiologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,29.36,29.0,0.0,Adulto
+177,Luísa Nunes,00000000177,F,+55 (061) 7627-2056,1973-01-01,61.81,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,77.09,53.0,0.0,Adulto
+178,Thiago Cardoso,00000000178,F,51 0459 7464,1968-01-01,41.12,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,56.67,58.0,0.0,Adulto
+179,Daniela Fernandes,00000000179,M,(084) 5738-6151,1998-01-01,13.13,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,39.88,28.0,0.0,Adulto
+180,Augusto Novaes,00000000180,F,+55 11 8215 3334,1986-01-01,36.47,4,ortopedia,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,53.88,40.0,0.0,Adulto
+181,Srta. Luara da Cruz,00000000181,M,0800 973 5608,2004-01-01,27.09,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,48.25,22.0,0.0,Adulto
+182,Dr. Luiz Gustavo Montenegro,00000000182,M,(084) 0447 7837,1938-01-01,70.33,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,66.2,88.0,0.0,Sênior (60+)
+183,Valentina Sampaio,00000000183,F,+55 (081) 3034-9363,1996-01-01,27.12,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,48.27,30.0,0.0,Adulto
+184,Alana da Mota,00000000184,M,+55 61 3983-2682,1981-01-01,42.19,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,33.31,45.0,0.0,Adulto
+185,Sr. Enzo Gabriel Rios,00000000185,M,+55 51 1366 5811,1991-01-01,42.57,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,33.54,35.0,0.0,Adulto
+186,Gabrielly Viana,00000000186,M,+55 81 7504-2711,1983-01-01,66.52,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,79.91,43.0,0.0,Adulto
+187,Manuella Santos,00000000187,M,41 5355-8230,1976-01-01,29.02,1,ginecologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,25.41,50.0,0.0,Adulto
+188,Sr. Bruno Ramos,00000000188,F,0500-799-8902,1935-01-01,71.45,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,74.87,91.0,0.0,Sênior (60+)
+189,Luiz Otávio Ferreira,00000000189,F,0500 213 0908,1967-01-01,37.36,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,22.42,59.0,0.0,Adulto
+190,Murilo da Rosa,00000000190,M,+55 (071) 8109-1885,1978-01-01,55.41,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,73.25,48.0,0.0,Adulto
+191,Sr. Ravy Siqueira,00000000191,M,+55 51 9944 9673,1993-01-01,34.01,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,20.41,33.0,0.0,Adulto
+192,Maya Lima,00000000192,M,+55 51 9914 1231,1979-01-01,55.05,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,57.03,47.0,0.0,Adulto
+193,Emanuella Monteiro,00000000193,F,(081) 4612-8610,1941-01-01,75.83,3,ginecologia,agendado,Cardiopatia Hipertrófica,⚠️ Acompanhamento Crônico,69.5,85.0,0.0,Sênior (60+)
+194,Dra. Ana Lívia Pires,00000000194,M,+55 61 4096 4459,1979-01-01,59.35,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,67.61,47.0,0.0,Adulto
+195,Ana Luiza Vasconcelos,00000000195,M,21 7443-8665,1969-01-01,33.36,2,neurologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,36.02,57.0,0.0,Adulto
+196,Raquel das Neves,00000000196,F,(081) 7767-2344,1951-01-01,33.65,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,60.19,75.0,0.0,Sênior (60+)
+197,Ana Júlia Pacheco,00000000197,F,61 7447-8257,1972-01-01,45.59,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,51.35,54.0,0.0,Adulto
+198,Sra. Kamilly Costa,00000000198,M,61 1071 1750,1943-01-01,36.03,4,pediatria,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,53.62,83.0,0.0,Sênior (60+)
+199,Luísa Nogueira,00000000199,F,0900 470 6854,1979-01-01,34.72,4,cardiologia,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,52.83,47.0,0.0,Adulto
+201,Dr. Lucca Dias,00000000201,M,+55 (061) 6139-0140,1963-01-01,61.26,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,52.76,63.0,0.0,Sênior (60+)
+202,Maria Eduarda da Cunha,00000000202,M,(081) 3778 6490,1961-01-01,24.16,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,54.5,65.0,0.0,Sênior (60+)
+203,Maria Helena Fogaça,00000000203,M,+55 21 0197-7351,1986-01-01,54.77,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,56.86,40.0,0.0,Adulto
+204,Srta. Gabriela Viana,00000000204,M,(081) 3340-4322,1948-01-01,32.06,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,19.24,78.0,0.0,Sênior (60+)
+205,Lunna Fernandes,00000000205,M,(021) 6121 3944,1997-01-01,50.05,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,62.03,29.0,0.0,Adulto
+206,Evelyn Monteiro,00000000206,F,+55 (021) 7090 1901,1935-01-01,71.87,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,43.12,91.0,0.0,Sênior (60+)
+207,Vitor Gabriel Rodrigues,00000000207,M,81 4094 8690,1990-01-01,13.78,1,ginecologia,realizado,Hipertensão Leve,✅ Monitoramento Anual,16.27,36.0,0.0,Adulto
+208,José Pedro da Conceição,00000000208,F,(011) 3135 2151,1958-01-01,50.21,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,38.13,68.0,0.0,Sênior (60+)
+209,Ana Lívia das Neves,00000000209,F,(071) 7324 7417,1982-01-01,40.26,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,56.16,44.0,0.0,Adulto
+210,Sra. Melissa Cavalcanti,00000000210,M,+55 61 6461-6722,1991-01-01,50.45,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,62.27,35.0,0.0,Adulto
+211,Noah Cardoso,00000000211,M,61 1232-4212,1946-01-01,51.11,4,ortopedia,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,62.67,80.0,0.0,Sênior (60+)
+212,Srta. Maria Isis Pires,00000000212,M,41 4186-1866,1966-01-01,44.52,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,34.71,60.0,0.0,Sênior (60+)
+213,Dra. Fernanda Garcia,00000000213,F,+55 71 0671-2385,1988-01-01,40.83,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,40.5,38.0,0.0,Adulto
+214,Isaque Cunha,00000000214,M,41 4017-2427,2002-01-01,25.59,2,neurologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,31.35,24.0,0.0,Adulto
+215,Clarice da Rosa,00000000215,M,81 7697 5904,1966-01-01,44.32,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,26.59,60.0,0.0,Sênior (60+)
+216,Joana da Cruz,00000000216,F,84 4857 4532,1972-01-01,50.39,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,62.23,54.0,0.0,Adulto
+217,João Felipe Silva,00000000217,M,61 1503 1929,1950-01-01,72.72,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,51.63,76.0,0.0,Sênior (60+)
+218,Sr. Théo da Cruz,00000000218,M,21 3047-2875,1992-01-01,57.55,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,42.53,34.0,0.0,Adulto
+219,Sarah Farias,00000000219,F,+55 84 2566 2686,1959-01-01,61.86,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,69.12,67.0,0.0,Sênior (60+)
+221,Nathan da Costa,00000000221,F,61 4332 6114,1995-01-01,25.52,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,15.31,31.0,0.0,Adulto
+222,Diego Novais,00000000222,M,+55 (041) 6627 7699,2000-01-01,12.37,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,47.42,26.0,0.0,Adulto
+223,Ayla Ramos,00000000223,F,+55 61 1442 3897,1991-01-01,57.54,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,74.52,35.0,0.0,Adulto
+224,Mathias Mendes,00000000224,M,+55 84 8115 2371,1943-01-01,38.16,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,22.9,83.0,0.0,Sênior (60+)
+225,Cecília da Luz,00000000225,M,(011) 9791-0510,1990-01-01,44.18,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,26.51,36.0,0.0,Adulto
+226,Maria Júlia Lima,00000000226,F,+55 (011) 4012-4392,1946-01-01,66.72,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,72.03,80.0,0.0,Sênior (60+)
+227,Laura Aragão,00000000227,M,0500 644 8841,1935-01-01,61.74,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,77.04,91.0,0.0,Sênior (60+)
+228,Heitor Correia,00000000228,M,+55 (071) 0641-8895,1980-01-01,19.45,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,35.67,46.0,0.0,Adulto
+229,Juan Monteiro,00000000229,M,0800 648 6745,1985-01-01,47.09,5,ginecologia,no_show,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,68.25,41.0,250.0,Adulto
+230,Bryan Montenegro,00000000230,F,0300 779 4040,1948-01-01,32.12,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,19.27,78.0,0.0,Sênior (60+)
+231,Milena Araújo,00000000231,M,+55 51 7185 4278,1999-01-01,42.99,4,pediatria,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,57.79,27.0,0.0,Adulto
+232,Davi Lucas Mendonça,00000000232,F,+55 (084) 6162 7498,1985-01-01,20.39,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,12.23,41.0,0.0,Adulto
+233,Rael Duarte,00000000233,F,+55 84 4659 0799,1970-01-01,52.0,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,39.2,56.0,0.0,Adulto
+234,João Felipe das Neves,00000000234,F,+55 71 6672-7398,2002-01-01,19.82,2,neurologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,27.89,24.0,0.0,Adulto
+235,Mariane Costa,00000000235,F,+55 (041) 9514-5308,1937-01-01,34.67,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,52.8,89.0,0.0,Sênior (60+)
+236,Carlos Eduardo Fernandes,00000000236,M,+55 (041) 5230 5663,1949-01-01,30.98,2,ginecologia,realizado,Asma / Obesidade,✅ Monitoramento Anual,34.59,77.0,0.0,Sênior (60+)
+237,Sra. Isabelly Rodrigues,00000000237,F,41 3646 1156,1980-01-01,17.97,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,34.78,46.0,0.0,Adulto
+238,Eloah Macedo,00000000238,M,(071) 5635 4619,1965-01-01,58.46,4,cardiologia,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,67.08,61.0,0.0,Sênior (60+)
+239,Mariane Teixeira,00000000239,F,0500-196-5659,1967-01-01,55.27,2,neurologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,49.16,59.0,0.0,Adulto
+240,Maria Luiza Santos,00000000240,F,(011) 6041 9030,1987-01-01,26.11,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,47.67,39.0,0.0,Adulto
+241,Gael Peixoto,00000000241,M,0900 434 6009,1965-01-01,52.32,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,71.39,61.0,0.0,Sênior (60+)
+242,Rael Costela,00000000242,F,41 8925 4628,1949-01-01,50.69,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,38.41,77.0,0.0,Sênior (60+)
+243,João Aparecida,00000000243,F,(021) 6979 3418,1999-01-01,52.91,2,neurologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,47.75,27.0,0.0,Adulto
+244,Valentim Nunes,00000000244,M,+55 (051) 9200 8527,1946-01-01,40.1,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,24.06,80.0,0.0,Sênior (60+)
+245,Maitê Rodrigues,00000000245,F,+55 11 4777-6801,1952-01-01,55.53,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,57.32,74.0,0.0,Sênior (60+)
+246,Pedro Cirino,00000000246,M,0800 249 2580,1945-01-01,71.74,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,75.04,81.0,0.0,Sênior (60+)
+247,Luiz Miguel Cavalcante,00000000247,F,(061) 3040-6668,1982-01-01,54.6,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,40.76,44.0,0.0,Adulto
+248,Esther Monteiro,00000000248,M,0800 925 0342,1975-01-01,56.6,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,41.96,51.0,0.0,Adulto
+249,Eloah Jesus,00000000249,M,+55 84 8288-4467,1993-01-01,24.65,1,ortopedia,agendado,Hipertensão Leve,✅ Monitoramento Anual,22.79,33.0,0.0,Adulto
+250,Leonardo Pereira,00000000250,M,(061) 4731-3074,1978-01-01,45.39,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,27.23,48.0,0.0,Adulto
+251,Sra. Anna Liz Cardoso,00000000251,F,+55 71 1573 3565,1945-01-01,66.69,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,72.01,81.0,0.0,Sênior (60+)
+252,Vinícius Rezende,00000000252,M,(084) 8934-1832,1975-01-01,37.31,1,ortopedia,agendado,Hipertensão Leve,✅ Monitoramento Anual,30.39,51.0,0.0,Adulto
+254,Eduarda Garcia,00000000254,F,+55 (051) 3949 2268,1937-01-01,32.49,3,cardiologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,43.49,89.0,0.0,Sênior (60+)
+255,Benício da Paz,00000000255,F,21 4835 8228,1988-01-01,51.23,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,70.74,38.0,0.0,Adulto
+256,Dr. Davi Correia,00000000256,F,0800 644 5161,1955-01-01,47.0,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,60.2,71.0,0.0,Sênior (60+)
+257,Maria Clara da Cruz,00000000257,M,+55 81 1344 0970,1953-01-01,25.53,3,neurologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,39.32,73.0,0.0,Sênior (60+)
+258,Hadassa Ramos,00000000258,M,41 5403 0734,1999-01-01,22.13,2,ortopedia,agendado,Asma / Obesidade,✅ Monitoramento Anual,29.28,27.0,0.0,Adulto
+259,Caio da Cunha,00000000259,F,81 5990 6900,1959-01-01,70.72,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,74.43,67.0,0.0,Sênior (60+)
+260,Agatha da Luz,00000000260,M,(071) 7713-2992,1992-01-01,48.28,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,60.97,34.0,0.0,Adulto
+262,Dante Cunha,00000000262,M,51 6367 1568,1938-01-01,38.35,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,63.01,88.0,0.0,Sênior (60+)
+263,Ana Clara Rezende,00000000263,M,(084) 7823-1874,1984-01-01,47.93,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,60.76,42.0,0.0,Adulto
+264,Isabela Albuquerque,00000000264,M,+55 51 5116 2185,2002-01-01,22.64,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,13.58,24.0,0.0,Adulto
+265,Maria Fernanda Sampaio,00000000265,M,+55 (061) 9986 5280,1971-01-01,19.46,2,pediatria,agendado,Asma / Obesidade,✅ Monitoramento Anual,27.68,55.0,0.0,Adulto
+266,Maria Julia Gomes,00000000266,M,+55 84 0690-3019,1987-01-01,37.76,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,46.66,39.0,0.0,Adulto
+267,Eloah Cassiano,00000000267,F,0300-511-4440,1945-01-01,67.13,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,40.28,81.0,0.0,Sênior (60+)
+268,Josué da Cunha,00000000268,M,81 7971-1492,1997-01-01,52.34,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,47.4,29.0,0.0,Adulto
+269,José Pedro Pimenta,00000000269,M,(031) 5314-1963,2002-01-01,11.23,3,neurologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,30.74,24.0,0.0,Adulto
+270,Maria Luísa das Neves,00000000270,F,(084) 7351 7029,2002-01-01,34.7,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,60.82,24.0,0.0,Adulto
+271,Catarina Ribeiro,00000000271,M,(081) 0628-2189,1934-01-01,66.28,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,79.77,92.0,0.0,Sênior (60+)
+272,Davi Miguel Pereira,00000000272,F,51 3234 4925,1967-01-01,25.14,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,15.08,59.0,0.0,Adulto
+273,Dra. Fernanda Barbosa,00000000273,F,31 8670 1221,2003-01-01,57.52,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,50.51,23.0,0.0,Adulto
+274,Bento Martins,00000000274,F,+55 (031) 2583 5042,1984-01-01,36.62,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,61.97,42.0,0.0,Adulto
+275,Hadassa Novais,00000000275,F,0300-023-4521,1967-01-01,53.85,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,48.31,59.0,0.0,Adulto
+276,Dra. Maria Fernanda Siqueira,00000000276,F,+55 (031) 4650 6382,1964-01-01,44.03,2,neurologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,42.42,62.0,0.0,Sênior (60+)
+277,Letícia Sá,00000000277,M,+55 (051) 4596 5167,1964-01-01,70.33,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,66.2,62.0,0.0,Sênior (60+)
+278,Pietro Pastor,00000000278,F,(041) 5698-0810,1951-01-01,60.02,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,60.01,75.0,0.0,Sênior (60+)
+279,Luiz Otávio Correia,00000000279,M,+55 (081) 4309 7137,2003-01-01,50.43,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,30.26,23.0,0.0,Adulto
+280,Isabela Brito,00000000280,F,71 3068-2630,1979-01-01,63.37,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,46.02,47.0,0.0,Adulto
+281,Emilly Peixoto,00000000281,F,51 5115 0615,1959-01-01,61.57,1,neurologia,realizado,Hipertensão Leve,🔍 Exames Preventivos,44.94,67.0,0.0,Sênior (60+)
+282,Isabela Castro,00000000282,M,0500-303-9566,1961-01-01,27.11,2,pediatria,agendado,Asma / Obesidade,✅ Monitoramento Anual,32.27,65.0,0.0,Sênior (60+)
+283,Sofia Alves,00000000283,M,+55 61 1617-3417,1999-01-01,43.33,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,66.0,27.0,0.0,Adulto
+284,Joana Mendes,00000000284,M,61 4265 3064,1973-01-01,63.06,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,45.84,53.0,0.0,Adulto
+285,Brayan Ribeiro,00000000285,M,81 7926-6696,1943-01-01,50.52,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,46.31,83.0,0.0,Sênior (60+)
+286,Clarice Freitas,00000000286,F,+55 41 4446 3422,2001-01-01,47.09,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,36.25,25.0,0.0,Adulto
+287,Carlos Eduardo Campos,00000000287,F,+55 84 1712-2770,1964-01-01,40.93,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,32.56,62.0,0.0,Sênior (60+)
+288,Bernardo Moura,00000000288,M,+55 31 4276-3676,1993-01-01,52.89,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,31.73,33.0,0.0,Adulto
+289,Emanuel Cirino,00000000289,M,+55 (051) 9595 0863,1986-01-01,33.24,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,59.94,40.0,0.0,Adulto
+290,Maria Alice Pastor,00000000290,M,+55 (011) 7505-1483,1952-01-01,31.68,2,ginecologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,35.01,74.0,0.0,Sênior (60+)
+291,Ana Campos,00000000291,M,+55 (011) 6254 1069,1949-01-01,57.02,2,ortopedia,agendado,Asma / Obesidade,🔍 Exames Preventivos,50.21,77.0,0.0,Sênior (60+)
+292,Aylla Cardoso,00000000292,M,21 2449-4140,1944-01-01,30.53,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,58.32,82.0,0.0,Sênior (60+)
+293,Antonella Ribeiro,00000000293,F,+55 (021) 6970-9907,1998-01-01,51.21,0,ginecologia,realizado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,30.73,28.0,0.0,Adulto
+294,Ravy Sousa,00000000294,M,0900 824 7478,1947-01-01,57.54,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,58.52,79.0,0.0,Sênior (60+)
+295,Maria Ribeiro,00000000295,F,31 9120-4039,1985-01-01,56.05,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,41.63,41.0,0.0,Adulto
+296,Maria Flor Sales,00000000296,F,0300 282 3697,1969-01-01,40.28,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,56.17,57.0,0.0,Adulto
+298,Maria Vasconcelos,00000000298,F,(071) 3808 7983,1947-01-01,37.63,4,pediatria,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.58,79.0,0.0,Sênior (60+)
+299,Ravy Camargo,00000000299,F,(031) 4412-3030,1987-01-01,51.76,4,cardiologia,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,63.06,39.0,0.0,Adulto
+300,Srta. Helena Gomes,00000000300,F,0800 423 5621,1963-01-01,71.87,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,83.12,63.0,0.0,Sênior (60+)
+301,Maria Sophia Pires,00000000301,M,+55 51 2243 4744,1968-01-01,46.41,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,67.85,58.0,0.0,Adulto
+302,Ana Beatriz Farias,00000000302,M,+55 (041) 7285-8645,1945-01-01,54.44,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,72.66,81.0,0.0,Sênior (60+)
+303,Alexandre Novais,00000000303,M,(061) 2302-4783,2003-01-01,43.91,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,66.35,23.0,0.0,Adulto
+304,Gustavo Henrique Fernandes,00000000304,M,0900-574-8166,1939-01-01,29.95,4,pediatria,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,49.97,87.0,0.0,Sênior (60+)
+305,Ágatha Silva,00000000305,F,81 6012 6115,1965-01-01,69.19,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,65.51,61.0,0.0,Sênior (60+)
+306,Srta. Ana Clara Sousa,00000000306,M,0800 470 0043,1974-01-01,19.67,1,ginecologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,19.8,52.0,0.0,Adulto
+307,Mariane Garcia,00000000307,F,0500-581-6491,1995-01-01,20.99,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,52.59,31.0,0.0,Adulto
+308,Antony Campos,00000000308,F,0800 530 3924,1985-01-01,61.13,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,52.68,41.0,0.0,Adulto
+309,Ana Sophia Cassiano,00000000309,F,0800-696-2211,1941-01-01,46.87,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,52.12,85.0,0.0,Sênior (60+)
+310,Amanda Guerra,00000000310,M,41 4536 2181,1968-01-01,47.48,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,60.49,58.0,0.0,Adulto
+311,Davi Novaes,00000000311,F,+55 (081) 4161 6831,1961-01-01,65.11,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,63.07,65.0,0.0,Sênior (60+)
+312,Emilly Vargas,00000000312,F,31 6154-1879,1944-01-01,74.33,1,ginecologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,52.6,82.0,0.0,Sênior (60+)
+313,Maysa Garcia,00000000313,F,+55 31 9391 0755,1968-01-01,19.77,1,ginecologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,19.86,58.0,0.0,Adulto
+314,Dr. Lorenzo Rios,00000000314,F,+55 51 3130 1187,1970-01-01,66.89,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,72.13,56.0,0.0,Adulto
+315,Mariana Fonseca,00000000315,F,+55 11 3130 8625,1954-01-01,31.42,3,neurologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,42.85,72.0,0.0,Sênior (60+)
+316,Mariah Freitas,00000000316,F,+55 (051) 3412-0888,1962-01-01,35.76,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,29.46,64.0,0.0,Sênior (60+)
+317,Bella Nunes,00000000317,M,+55 (081) 0571-4673,1966-01-01,43.84,2,ortopedia,agendado,Asma / Obesidade,🔍 Exames Preventivos,42.3,60.0,0.0,Sênior (60+)
+318,Davi Lucas Melo,00000000318,F,21 2085 9668,1967-01-01,37.5,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,62.5,59.0,0.0,Adulto
+319,Heloísa Peixoto,00000000319,F,11 4699-4635,1955-01-01,57.37,3,pediatria,no_show,Cardiopatia Hipertrófica,🔍 Exames Preventivos,58.42,71.0,250.0,Sênior (60+)
+320,Sra. Jade Leão,00000000320,M,(041) 9667 9184,2004-01-01,32.19,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,51.31,22.0,0.0,Adulto
+321,Yuri Farias,00000000321,F,41 0640-5523,1958-01-01,61.71,0,neurologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,37.03,68.0,0.0,Sênior (60+)
+322,Allana Santos,00000000322,F,(084) 3581-2131,1962-01-01,48.46,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,69.08,64.0,0.0,Sênior (60+)
+323,Sabrina Monteiro,00000000323,F,(021) 9290-2671,1979-01-01,15.02,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,9.01,47.0,0.0,Adulto
+324,Yuri Andrade,00000000324,F,51 5448 2410,1959-01-01,49.53,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,29.72,67.0,0.0,Sênior (60+)
+325,Maysa Pinto,00000000325,M,+55 31 0972-4183,1991-01-01,42.76,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,57.66,35.0,0.0,Adulto
+326,Lucas Abreu,00000000326,F,+55 84 7440 1252,1939-01-01,46.41,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,67.85,87.0,0.0,Sênior (60+)
+327,Sr. Alexandre Aragão,00000000327,M,0900-198-6620,1964-01-01,61.12,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,68.67,62.0,0.0,Sênior (60+)
+328,Ana Júlia Almeida,00000000328,M,41 7663-9684,1974-01-01,60.93,2,neurologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,52.56,52.0,0.0,Adulto
+329,Jade Câmara,00000000329,F,84 3969 2795,2001-01-01,49.29,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,45.57,25.0,0.0,Adulto
+330,Nathan Brito,00000000330,M,+55 (021) 3807 2913,1992-01-01,55.05,2,cardiologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,49.03,34.0,0.0,Adulto
+331,Yago Alves,00000000331,M,+55 21 3900-8062,1951-01-01,38.32,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,22.99,75.0,0.0,Sênior (60+)
+332,Pedro Lucas Pimenta,00000000332,M,(021) 7997 8188,1934-01-01,50.02,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,62.01,92.0,0.0,Sênior (60+)
+333,Théo Rios,00000000333,M,21 8788 3847,1972-01-01,37.82,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,22.69,54.0,0.0,Adulto
+334,Maria Fernanda Ribeiro,00000000334,M,+55 (031) 9905 7566,1994-01-01,46.13,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,67.68,32.0,0.0,Adulto
+335,Nicole Aragão,00000000335,F,+55 21 1990-3275,1979-01-01,38.46,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,31.08,47.0,0.0,Adulto
+336,João Pedro Macedo,00000000336,M,(084) 5755 4585,1979-01-01,23.95,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,38.37,47.0,0.0,Adulto
+337,Evelyn Machado,00000000337,M,0900-771-5119,1968-01-01,43.63,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,50.18,58.0,0.0,Adulto
+338,Lorenzo Montenegro,00000000338,M,51 7743 7571,1957-01-01,62.44,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,77.46,69.0,0.0,Sênior (60+)
+339,José Costela,00000000339,M,+55 (041) 5350 7398,1962-01-01,32.39,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,51.43,64.0,0.0,Sênior (60+)
+340,Maysa Melo,00000000340,M,+55 71 8951 2851,1958-01-01,70.53,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,66.32,68.0,0.0,Sênior (60+)
+341,Leandro Camargo,00000000341,F,+55 41 8109 8805,1990-01-01,38.16,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.9,36.0,0.0,Adulto
+342,Milena Cunha,00000000342,F,21 5047 7957,1937-01-01,44.34,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,58.6,89.0,0.0,Sênior (60+)
+343,Camila Cavalcante,00000000343,M,(071) 9443-1944,1976-01-01,44.36,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,50.62,50.0,0.0,Adulto
+344,Isadora Rodrigues,00000000344,F,+55 84 9532 4066,1969-01-01,37.5,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,30.5,57.0,0.0,Adulto
+345,Stephany Ramos,00000000345,F,21 8974-1164,2001-01-01,33.02,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,19.81,25.0,0.0,Adulto
+346,Sra. Valentina Moreira,00000000346,M,+55 (031) 2886-3962,1966-01-01,45.77,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,27.46,60.0,0.0,Sênior (60+)
+347,Anna Liz Silva,00000000347,F,41 4610-0488,1949-01-01,49.68,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,53.81,77.0,0.0,Sênior (60+)
+348,Augusto Fonseca,00000000348,F,(021) 2531 1936,1961-01-01,54.56,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,64.74,65.0,0.0,Sênior (60+)
+349,Bernardo Rios,00000000349,F,0500 524 9731,1983-01-01,60.51,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,68.31,43.0,0.0,Adulto
+350,Ana Sophia da Mata,00000000350,M,51 8139 1909,1996-01-01,18.14,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,18.88,30.0,0.0,Adulto
+351,Arthur Miguel Melo,00000000351,F,0500-539-3628,1963-01-01,30.14,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,18.08,63.0,0.0,Sênior (60+)
+352,Larissa Novaes,00000000352,F,(061) 4021-2075,1937-01-01,70.66,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,58.4,89.0,0.0,Sênior (60+)
+353,Nicolas Garcia,00000000353,M,+55 81 4874 1445,1987-01-01,21.59,3,cardiologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,36.95,39.0,0.0,Adulto
+354,Pedro Henrique Leão,00000000354,M,51 0620 4794,1936-01-01,63.24,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,37.94,90.0,0.0,Sênior (60+)
+355,Isabela Câmara,00000000355,M,+55 51 5554 0833,1972-01-01,24.39,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,46.63,54.0,0.0,Adulto
+356,Luiz Henrique Machado,00000000356,M,+55 21 7356 9105,1968-01-01,49.15,2,ortopedia,agendado,Asma / Obesidade,🔍 Exames Preventivos,45.49,58.0,0.0,Adulto
+357,Joana Oliveira,00000000357,F,+55 (061) 9920-9527,1994-01-01,28.55,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,17.13,32.0,0.0,Adulto
+358,Melina Jesus,00000000358,F,11 0940 3840,1948-01-01,72.19,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,43.31,78.0,0.0,Sênior (60+)
+359,Stella Moura,00000000359,M,+55 (071) 8000-4713,1987-01-01,33.51,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,28.11,39.0,0.0,Adulto
+360,Nicole Freitas,00000000360,M,(021) 0042-1254,1964-01-01,69.56,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,57.74,62.0,0.0,Sênior (60+)
+361,Marcela Cirino,00000000361,F,+55 84 3673-0648,1986-01-01,29.26,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,25.56,40.0,0.0,Adulto
+362,Lara Ramos,00000000362,M,+55 41 4911-6645,1966-01-01,35.64,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,61.38,60.0,0.0,Sênior (60+)
+363,João Guilherme Dias,00000000363,M,(071) 6380-6961,1969-01-01,32.67,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,19.6,57.0,0.0,Adulto
+364,Marcela Casa Grande,00000000364,M,0300 220 6560,1964-01-01,43.12,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,49.87,62.0,0.0,Sênior (60+)
+365,Gustavo Castro,00000000365,M,+55 11 0726-1568,1961-01-01,36.46,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,53.88,65.0,0.0,Sênior (60+)
+366,Srta. Aurora Fonseca,00000000366,F,+55 (031) 4502 4034,1938-01-01,45.02,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,51.01,88.0,0.0,Sênior (60+)
+367,Stella Albuquerque,00000000367,F,0300-000-0162,1935-01-01,62.79,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,61.67,91.0,0.0,Sênior (60+)
+368,Maria Sophia da Paz,00000000368,F,+55 61 7294 2626,1970-01-01,37.88,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,62.73,56.0,0.0,Adulto
+369,Yago Siqueira,00000000369,M,31 6765 7566,1969-01-01,52.25,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,63.35,57.0,0.0,Adulto
+370,Lucas Martins,00000000370,F,+55 (061) 4183-8233,1950-01-01,28.03,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,24.82,76.0,0.0,Sênior (60+)
+371,Raquel Rodrigues,00000000371,F,51 0993 3214,1950-01-01,42.58,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,49.55,76.0,0.0,Sênior (60+)
+372,Letícia Barbosa,00000000372,F,(051) 4301-3758,1989-01-01,20.49,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,44.29,37.0,0.0,Adulto
+373,Maria Vitória Melo,00000000373,F,+55 (081) 1386-6662,2000-01-01,22.38,3,neurologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,37.43,26.0,0.0,Adulto
+374,Clara Caldeira,00000000374,F,+55 (071) 6145-2698,1984-01-01,29.85,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,57.91,42.0,0.0,Adulto
+375,Sr. Lucas Gabriel das Neves,00000000375,M,+55 61 7097-3920,1973-01-01,60.6,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,68.36,53.0,0.0,Adulto
+376,Yasmin Guerra,00000000376,F,21 4028-7826,1991-01-01,21.27,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,12.76,35.0,0.0,Adulto
+377,Valentim Vieira,00000000377,M,31 5626-5244,2003-01-01,33.99,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,20.39,23.0,0.0,Adulto
+378,Dr. Caleb Pires,00000000378,M,+55 (084) 0144-7522,1943-01-01,55.33,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,41.2,83.0,0.0,Sênior (60+)
+379,Dr. José Borges,00000000379,M,0500 658 2245,1999-01-01,37.35,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,62.41,27.0,0.0,Adulto
+380,Dr. Thomas Nascimento,00000000380,M,+55 (071) 6648 3221,1945-01-01,37.13,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,46.28,81.0,0.0,Sênior (60+)
+381,Marina Guerra,00000000381,F,0500-192-1345,1956-01-01,66.27,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,79.76,70.0,0.0,Sênior (60+)
+382,Ana Julia da Luz,00000000382,F,(071) 9158 4001,1975-01-01,26.76,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,56.06,51.0,0.0,Adulto
+383,Otto Rios,00000000383,F,41 6449 2176,1953-01-01,37.43,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,22.46,73.0,0.0,Sênior (60+)
+384,João Lucas Cassiano,00000000384,M,0800-120-6399,2003-01-01,55.17,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,41.1,23.0,0.0,Adulto
+385,Matheus Sá,00000000385,F,(084) 0935 3505,1980-01-01,37.17,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,22.3,46.0,0.0,Adulto
+386,Bruno Porto,00000000386,M,(031) 8213 8739,1969-01-01,28.46,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,57.08,57.0,0.0,Adulto
+387,Davi Lucca Aparecida,00000000387,F,(021) 3522 1936,1951-01-01,41.78,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,57.07,75.0,0.0,Sênior (60+)
+388,Joaquim Moura,00000000388,F,(041) 1693 7670,1964-01-01,51.32,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,30.79,62.0,0.0,Sênior (60+)
+389,Zoe Lima,00000000389,M,+55 84 2954-1839,1997-01-01,34.41,1,neurologia,no_show,Hipertensão Leve,✅ Monitoramento Anual,28.65,29.0,250.0,Adulto
+390,Julia Montenegro,00000000390,M,(051) 3868-8953,1937-01-01,67.94,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,64.76,89.0,0.0,Sênior (60+)
+391,Alice Pires,00000000391,M,51 0627 7521,1992-01-01,58.41,5,ginecologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,75.05,34.0,0.0,Adulto
+392,Dra. Stephany Almeida,00000000392,F,0500 798 1572,1999-01-01,12.38,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,39.43,27.0,0.0,Adulto
+393,Isabella Ferreira,00000000393,M,+55 (051) 7705 8159,1945-01-01,45.02,2,cardiologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,43.01,81.0,0.0,Sênior (60+)
+394,Mariah da Mata,00000000394,F,0800-884-4848,1971-01-01,18.81,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,11.29,55.0,0.0,Adulto
+395,Sr. Pietro Albuquerque,00000000395,F,+55 84 8507 2215,1974-01-01,36.52,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,21.91,52.0,0.0,Adulto
+397,Asafe Oliveira,00000000397,F,+55 51 7960 5983,1989-01-01,35.97,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,21.58,37.0,0.0,Adulto
+398,Maria Fernanda Fernandes,00000000398,M,(081) 1468 3991,1965-01-01,52.46,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,63.48,61.0,0.0,Sênior (60+)
+399,Stella Cavalcanti,00000000399,F,41 1885-2274,1953-01-01,66.7,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,64.02,73.0,0.0,Sênior (60+)
+400,Maria Sophia Farias,00000000400,F,+55 (011) 1900-9005,1942-01-01,46.31,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,59.79,84.0,0.0,Sênior (60+)
+401,Oliver Lopes,00000000401,M,(084) 0031 3661,1991-01-01,33.25,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,51.95,35.0,0.0,Adulto
+402,Maria Helena Pinto,00000000402,F,0500-924-8923,1950-01-01,51.27,5,ortopedia,realizado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,70.76,76.0,0.0,Sênior (60+)
+403,Dr. Paulo da Costa,00000000403,F,+55 (071) 3669-3818,1984-01-01,22.48,1,pediatria,agendado,Hipertensão Leve,✅ Monitoramento Anual,21.49,42.0,0.0,Adulto
+404,João Felipe Fernandes,00000000404,M,(084) 0008 9240,1992-01-01,22.66,1,pediatria,agendado,Hipertensão Leve,✅ Monitoramento Anual,21.6,34.0,0.0,Adulto
+405,Ana Julia Mendonça,00000000405,F,+55 (011) 9386 0202,1952-01-01,73.58,4,pediatria,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,76.15,74.0,0.0,Sênior (60+)
+406,Enrico Aragão,00000000406,M,31 0342-6465,1945-01-01,69.92,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,73.95,81.0,0.0,Sênior (60+)
+407,Ravi Lucca Cavalcante,00000000407,F,+55 (011) 1155 7571,1979-01-01,59.73,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,59.84,47.0,0.0,Adulto
+408,Maysa Peixoto,00000000408,M,(071) 7444 9793,1953-01-01,45.92,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,67.55,73.0,0.0,Sênior (60+)
+409,Natália Peixoto,00000000409,M,+55 (011) 4545 9577,1992-01-01,14.71,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,8.83,34.0,0.0,Adulto
+410,Arthur Miguel Alves,00000000410,M,+55 51 2026 3291,1996-01-01,48.84,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,29.3,30.0,0.0,Adulto
+411,Rael Cardoso,00000000411,M,+55 (081) 8066-2005,1976-01-01,61.92,1,ortopedia,agendado,Hipertensão Leve,🔍 Exames Preventivos,45.15,50.0,0.0,Adulto
+412,Ryan Machado,00000000412,F,(084) 5368 9334,1984-01-01,38.77,2,cardiologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,39.26,42.0,0.0,Adulto
+413,Enzo Gabriel Albuquerque,00000000413,M,+55 11 2707 3496,1956-01-01,23.73,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,14.24,70.0,0.0,Sênior (60+)
+414,Eduardo da Rocha,00000000414,F,+55 (061) 9612-5964,1936-01-01,55.01,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,57.01,90.0,0.0,Sênior (60+)
+415,Ana Julia Gonçalves,00000000415,M,(071) 7664-7395,1997-01-01,45.41,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,27.25,29.0,0.0,Adulto
+416,Pedro Lucas Santos,00000000416,F,(084) 5878-5987,1954-01-01,23.61,2,neurologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,30.17,72.0,0.0,Sênior (60+)
+417,Diogo Araújo,00000000417,F,21 2557-8264,1984-01-01,36.1,1,pediatria,agendado,Hipertensão Leve,✅ Monitoramento Anual,29.66,42.0,0.0,Adulto
+418,Heloísa Araújo,00000000418,F,51 9639 7713,1994-01-01,44.07,2,cardiologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,42.44,32.0,0.0,Adulto
+419,Mathias Machado,00000000419,M,+55 71 5764 5030,1954-01-01,26.92,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,24.15,72.0,0.0,Sênior (60+)
+420,Srta. Antonella Macedo,00000000420,F,(031) 5067 8688,1997-01-01,10.15,1,cardiologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,14.09,29.0,0.0,Adulto
+421,Danilo Rezende,00000000421,F,(051) 6928 5717,1997-01-01,56.9,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,34.14,29.0,0.0,Adulto
+422,Gabrielly Ribeiro,00000000422,M,+55 (084) 9641 8441,1955-01-01,33.47,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,20.08,71.0,0.0,Sênior (60+)
+423,Emanuelly da Paz,00000000423,M,61 1196-6427,1964-01-01,42.91,1,cardiologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,33.75,62.0,0.0,Sênior (60+)
+424,Thiago Vargas,00000000424,M,+55 51 2917 0079,1995-01-01,26.34,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,39.8,31.0,0.0,Adulto
+425,Theodoro Fonseca,00000000425,F,+55 (084) 4377 4180,2003-01-01,39.42,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,55.65,23.0,0.0,Adulto
+426,Enzo Camargo,00000000426,F,(084) 7710 9801,1989-01-01,21.33,3,neurologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,36.8,37.0,0.0,Adulto
+427,Helena Brito,00000000427,M,11 2718-8785,1990-01-01,22.43,1,ortopedia,agendado,Hipertensão Leve,✅ Monitoramento Anual,21.46,36.0,0.0,Adulto
+428,Vitor Hugo Cavalcanti,00000000428,F,71 4677-1402,1946-01-01,45.83,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,51.5,80.0,0.0,Sênior (60+)
+429,Ayla Martins,00000000429,F,(041) 5769 1217,1983-01-01,63.72,5,cardiologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,78.23,43.0,0.0,Adulto
+430,Dr. Caio da Paz,00000000430,M,+55 (071) 1978-0044,1973-01-01,20.94,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,52.56,53.0,0.0,Adulto
+431,Kaique Montenegro,00000000431,F,(051) 4497-6582,1973-01-01,28.22,0,ginecologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,16.93,53.0,0.0,Adulto
+432,Sophie Lima,00000000432,M,+55 (041) 3355-3033,1984-01-01,40.03,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,64.02,42.0,0.0,Adulto
+433,Ana Liz Costela,00000000433,M,+55 81 7430 6983,1998-01-01,13.49,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,32.09,28.0,0.0,Adulto
+434,Vitor Camargo,00000000434,M,0300 738 9471,1983-01-01,59.17,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,35.5,43.0,0.0,Adulto
+435,Henry Duarte,00000000435,M,(041) 3635 0784,2003-01-01,46.6,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,59.96,23.0,0.0,Adulto
+436,Vicente Nogueira,00000000436,M,+55 41 6837-2719,1955-01-01,30.23,2,neurologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,34.14,71.0,0.0,Sênior (60+)
+437,Arthur Miguel Cavalcanti,00000000437,M,+55 21 6158 5109,1983-01-01,45.82,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,59.49,43.0,0.0,Adulto
+438,Beatriz Peixoto,00000000438,F,+55 21 9618 3892,1942-01-01,34.18,2,pediatria,agendado,Asma / Obesidade,✅ Monitoramento Anual,36.51,84.0,0.0,Sênior (60+)
+439,Maria Helena Costa,00000000439,F,(051) 6215 6086,1966-01-01,55.46,0,neurologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,33.28,60.0,0.0,Sênior (60+)
+440,Luiz Gustavo Cavalcanti,00000000440,F,+55 (041) 1177-6797,1997-01-01,9.57,1,neurologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,13.74,29.0,0.0,Adulto
+441,Ester Sales,00000000441,M,+55 41 3182 9654,2000-01-01,21.1,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,12.66,26.0,0.0,Adulto
+442,Eloah da Rocha,00000000442,F,(081) 6939 8723,1941-01-01,36.1,1,ortopedia,agendado,Hipertensão Leve,✅ Monitoramento Anual,29.66,85.0,0.0,Sênior (60+)
+443,Dr. Arthur Miguel Gomes,00000000443,F,31 9082-8343,1984-01-01,47.8,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,68.68,42.0,0.0,Adulto
+444,Maria Júlia Fernandes,00000000444,F,0300-873-7389,1964-01-01,48.93,4,ortopedia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,61.36,62.0,0.0,Sênior (60+)
+445,Sra. Ágatha Gomes,00000000445,F,(041) 3076-3060,1947-01-01,63.39,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,62.03,79.0,0.0,Sênior (60+)
+446,Mathias Cavalcanti,00000000446,M,+55 81 2434-8472,1971-01-01,49.82,0,ortopedia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,29.89,55.0,0.0,Adulto
+447,Emanuel Macedo,00000000447,M,51 7919 1208,1949-01-01,32.74,4,ginecologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,51.64,77.0,0.0,Sênior (60+)
+448,Maria Montenegro,00000000448,F,41 5224-0985,2001-01-01,52.21,1,ortopedia,realizado,Hipertensão Leve,🔍 Exames Preventivos,39.33,25.0,0.0,Adulto
+449,José Pedro Teixeira,00000000449,M,81 1116-2141,1979-01-01,39.13,5,ortopedia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,63.48,47.0,0.0,Adulto
+450,Enrico Cirino,00000000450,F,31 4162-1129,1967-01-01,29.17,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,41.5,59.0,0.0,Adulto
+451,Josué Camargo,00000000451,M,+55 11 1403-1590,1988-01-01,39.31,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,47.59,38.0,0.0,Adulto
+452,Dr. Noah Oliveira,00000000452,M,+55 (084) 6154 1858,1947-01-01,54.13,3,pediatria,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,56.48,79.0,0.0,Sênior (60+)
+453,Catarina das Neves,00000000453,F,+55 (041) 9373-9858,1971-01-01,47.01,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,36.21,55.0,0.0,Adulto
+454,Jade Lopes,00000000454,M,(061) 2958-3198,1945-01-01,55.52,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,33.31,81.0,0.0,Sênior (60+)
+455,Alana Barbosa,00000000455,F,(084) 0566-0239,1983-01-01,53.6,4,ginecologia,realizado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,64.16,43.0,0.0,Adulto
+456,José Miguel da Cruz,00000000456,F,+55 11 7343 5380,1974-01-01,39.01,2,cardiologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,39.41,52.0,0.0,Adulto
+457,Cecilia Souza,00000000457,M,+55 81 3955 3961,1950-01-01,26.63,0,pediatria,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,15.98,76.0,0.0,Sênior (60+)
+458,Emilly Novaes,00000000458,M,+55 61 7580-6954,1958-01-01,66.46,0,ginecologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,39.88,68.0,0.0,Sênior (60+)
+459,Theodoro Costela,00000000459,F,+55 31 3329-2028,1988-01-01,38.61,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,47.17,38.0,0.0,Adulto
+460,João Pedro da Luz,00000000460,F,(041) 9946 5057,1990-01-01,52.56,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,71.54,36.0,0.0,Adulto
+461,Emanuelly Rocha,00000000461,M,11 0635-0774,1989-01-01,38.78,0,neurologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,23.27,37.0,0.0,Adulto
+462,Dra. Lorena da Cruz,00000000462,M,(041) 9393 0061,1955-01-01,59.71,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,67.83,71.0,0.0,Sênior (60+)
+463,Lorena Castro,00000000463,M,+55 21 9747-3816,1935-01-01,43.64,2,ginecologia,agendado,Asma / Obesidade,🔍 Exames Preventivos,42.18,91.0,0.0,Sênior (60+)
+464,Luiz Henrique da Mata,00000000464,F,(071) 3397 5547,1970-01-01,60.84,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,44.5,56.0,0.0,Adulto
+465,Helena Azevedo,00000000465,M,(021) 3063 1458,1941-01-01,68.03,3,ginecologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,64.82,85.0,0.0,Sênior (60+)
+466,Théo Pacheco,00000000466,M,11 1152-7611,1941-01-01,34.57,3,cardiologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,44.74,85.0,0.0,Sênior (60+)
+467,Alícia Silva,00000000467,F,+55 41 9846-7468,1966-01-01,41.24,2,neurologia,realizado,Asma / Obesidade,🔍 Exames Preventivos,40.74,60.0,0.0,Sênior (60+)
+468,Marcos Vinicius Leão,00000000468,M,+55 (041) 3374-7384,1935-01-01,42.96,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,65.78,91.0,0.0,Sênior (60+)
+469,Samuel Borges,00000000469,M,0900-690-5652,1945-01-01,59.55,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,59.73,81.0,0.0,Sênior (60+)
+470,Yago Casa Grande,00000000470,F,0300 506 4765,1975-01-01,19.93,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,35.96,51.0,0.0,Adulto
+471,Davi Lucas Novais,00000000471,M,(061) 8289-2699,1998-01-01,50.16,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,54.1,28.0,0.0,Adulto
+472,Théo Pires,00000000472,M,+55 (061) 5470-4890,1951-01-01,65.14,1,pediatria,realizado,Hipertensão Leve,🔍 Exames Preventivos,47.08,75.0,0.0,Sênior (60+)
+473,Sra. Daniela Vieira,00000000473,M,+55 21 7220-0673,1961-01-01,65.55,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,71.33,65.0,0.0,Sênior (60+)
+474,Ana Vitória Sá,00000000474,M,11 9610 0753,1948-01-01,41.56,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,48.94,78.0,0.0,Sênior (60+)
+475,Maria Luísa Rodrigues,00000000475,M,0900-496-4467,1935-01-01,64.32,1,neurologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,46.59,91.0,0.0,Sênior (60+)
+476,Sr. Kaique Rocha,00000000476,F,0300 034 9597,1985-01-01,18.31,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,42.99,41.0,0.0,Adulto
+477,Luan Sampaio,00000000477,M,61 3327-6179,1991-01-01,62.96,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,69.78,35.0,0.0,Adulto
+478,Isabelly Costela,00000000478,M,+55 61 3930-2993,1936-01-01,36.96,1,pediatria,agendado,Hipertensão Leve,✅ Monitoramento Anual,30.18,90.0,0.0,Sênior (60+)
+479,Mathias Vieira,00000000479,M,+55 (081) 6992-1393,1986-01-01,58.75,0,cardiologia,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,35.25,40.0,0.0,Adulto
+480,Srta. Cecilia Vasconcelos,00000000480,M,(011) 2027 6260,1964-01-01,55.0,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,41.0,62.0,0.0,Sênior (60+)
+481,Marcela Rios,00000000481,F,(021) 8942 5604,1934-01-01,53.17,0,pediatria,agendado,Sem Diagnóstico Prévio,🔍 Exames Preventivos,31.9,92.0,0.0,Sênior (60+)
+482,Ian Guerra,00000000482,F,+55 51 5269 5764,1944-01-01,63.14,3,neurologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,61.88,82.0,0.0,Sênior (60+)
+483,Dom da Mota,00000000483,M,0800-141-5652,1956-01-01,25.49,1,ginecologia,agendado,Hipertensão Leve,✅ Monitoramento Anual,23.29,70.0,0.0,Sênior (60+)
+484,Mathias Souza,00000000484,F,(021) 8268 3114,1940-01-01,36.25,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,53.75,86.0,0.0,Sênior (60+)
+485,Davi Lucas Câmara,00000000485,F,+55 (071) 3233-9171,1948-01-01,46.91,1,ginecologia,agendado,Hipertensão Leve,🔍 Exames Preventivos,36.15,78.0,0.0,Sênior (60+)
+486,Ian Oliveira,00000000486,F,+55 61 9136 7757,1966-01-01,23.51,3,pediatria,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,38.11,60.0,0.0,Sênior (60+)
+487,Srta. Stella Araújo,00000000487,M,(021) 1047 9526,1945-01-01,73.6,1,pediatria,agendado,Hipertensão Leve,🔍 Exames Preventivos,52.16,81.0,0.0,Sênior (60+)
+488,Sra. Clarice Azevedo,00000000488,M,+55 (061) 6375 2235,1942-01-01,36.84,4,neurologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,54.1,84.0,0.0,Sênior (60+)
+489,Mathias Sales,00000000489,F,+55 71 1485 4763,1937-01-01,55.07,3,cardiologia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,57.04,89.0,0.0,Sênior (60+)
+490,André Aparecida,00000000490,M,(081) 1626 9997,1991-01-01,36.46,4,cardiologia,agendado,Diabetes + Hipertensão,⚠️ Acompanhamento Crônico,53.88,35.0,0.0,Adulto
+491,Dra. Marina Gonçalves,00000000491,F,(021) 0100-5699,1977-01-01,15.46,0,ortopedia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,9.28,49.0,0.0,Adulto
+492,Bernardo da Mata,00000000492,F,0300-709-7541,2002-01-01,36.54,3,ginecologia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,45.92,24.0,0.0,Adulto
+493,Luiza Oliveira,00000000493,M,71 1657-1401,1999-01-01,33.08,3,ortopedia,agendado,Cardiopatia Hipertrófica,✅ Monitoramento Anual,43.85,27.0,0.0,Adulto
+494,Ana Sophia Macedo,00000000494,M,+55 21 6978-2608,1955-01-01,44.75,2,pediatria,agendado,Asma / Obesidade,🔍 Exames Preventivos,42.85,71.0,0.0,Sênior (60+)
+495,Bruna Vargas,00000000495,F,+55 (084) 5214 7093,1993-01-01,51.94,3,ortopedia,agendado,Cardiopatia Hipertrófica,🔍 Exames Preventivos,55.16,33.0,0.0,Adulto
+496,Vicente Rocha,00000000496,M,+55 (081) 9400 2261,1950-01-01,53.85,5,pediatria,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,72.31,76.0,0.0,Sênior (60+)
+497,Luana Silveira,00000000497,F,(011) 2205-0959,1945-01-01,68.36,5,neurologia,agendado,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,81.02,81.0,0.0,Sênior (60+)
+499,Sra. Bella Nunes,00000000499,F,(081) 6905 8763,1972-01-01,17.27,0,cardiologia,agendado,Sem Diagnóstico Prévio,✅ Monitoramento Anual,10.36,54.0,0.0,Adulto
+500,Srta. Mariane Martins,00000000500,F,0800 563 0978,1973-01-01,32.96,2,neurologia,agendado,Asma / Obesidade,✅ Monitoramento Anual,35.78,53.0,0.0,Adulto
+253,Sra. Beatriz Novaes,00000000253,M,(081) 0805-7285,1945-01-01,66.38,5,,,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,79.83,81.0,0.0,Sênior (60+)
+18,Ana Júlia Costa,00000000018,M,+55 11 8862-6597,1943-01-01,58.84,5,,,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,75.3,83.0,0.0,Sênior (60+)
+297,Sr. Enrico Melo,00000000297,F,21 7259 3948,1971-01-01,53.65,5,,,Insuficiência Multiorgânica,⚠️ Acompanhamento Crônico,72.19,55.0,0.0,Adulto
+261,Sr. Marcelo das Neves,00000000261,F,(081) 0296 3231,1958-01-01,55.53,3,,,Cardiopatia Hipertrófica,🔍 Exames Preventivos,57.32,68.0,0.0,Sênior (60+)
+498,Maria Sophia Garcia,00000000498,M,0800-416-2168,2002-01-01,16.04,1,,,Hipertensão Leve,✅ Monitoramento Anual,17.62,24.0,0.0,Adulto
+396,Brenda da Mota,00000000396,M,+55 41 6939-1975,1984-01-01,30.16,3,,,Cardiopatia Hipertrófica,✅ Monitoramento Anual,42.1,42.0,0.0,Adulto
+200,Renan Correia,00000000200,M,+55 31 2623 5795,1988-01-01,46.05,0,,,Sem Diagnóstico Prévio,🔍 Exames Preventivos,27.63,38.0,0.0,Adulto
+220,Maria Fernanda Fernandes,00000000220,M,41 2700-4551,1943-01-01,58.68,3,,,Cardiopatia Hipertrófica,🔍 Exames Preventivos,59.21,83.0,0.0,Sênior (60+)
+130,Sr. Dante Novais,00000000130,F,21 6170-7084,2003-01-01,13.24,0,,,Sem Diagnóstico Prévio,✅ Monitoramento Anual,7.94,23.0,0.0,Adulto
