@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kari - MaterDei</title>
+
+  <style>
+    :root{
+      --md-green:#008B8B;
+      --md-green-2:#111110;
+      --md-border:#E6E8EB;
+      --md-bg:#ffffff;
+      --md-soft:#F6F8F7;
+      --md-text:#1F2937;
+      --md-muted:#6B7280;
+      
+      /* CORES PERSONALIZADAS CTA */
+      --cta-avancar: #4CAF93; /* Verde Neon */
+      --cta-voltar: #8EA3D4;  /* Rosa Claro */
+      --cta-remover: #E57373;  /* Vermelho */
+      --cta-selecionar: #008B8B; /* Laranja */
+      --cta-individual: #028E83; /* Azul Marinho */
+      --cta-familiar: #7688B5;   /* Rosa Choque */
+    }
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      background: #d1d5db; /* Fundo mais escuro para destacar o celular */
+      color: var(--md-text);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Helvetica Neue", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    /* --- MOCKUP DO SMARTPHONE USANDO IMAGEM --- */
+    .marvel-device {
+      width: 360px; 
+      height: 740px; 
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0; 
+    }
+
+    /* AJUSTE AQUI: Camada da imagem por cima do chat */
+    .marvel-device::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background-image: url("{{ url_for('static', filename='mockup.png') }}");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      z-index: 999; /* Garante que fica em primeiro plano */
+      pointer-events: none; /* Permite clicar no que está atrás (chat) */
+    }
+
+    /* Tela Interna - Ajustada para preencher o visor da imagem */
+    .screen-container {
+      width: 86%;  /* Ajuste para ocupar a largura do visor na foto */
+      height: 85%; /* AJUSTADO: Reduzido para não vazar a altura do mockup */
+      background: var(--md-soft);
+      border-radius: 25px; 
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-top: -2px; /* Pequeno ajuste fino de centralização vertical */
+      z-index: 1; /* Fica atrás da moldura */
+    }
+
+    /* --- SEUS ESTILOS ORIGINAIS ADAPTADOS --- */
+    .topbar{ background: var(--md-bg); border-bottom:1px solid var(--md-border); width: 100%; }
+    .topbar-inner{
+      padding: 18px 16px;
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .brand{ display:flex; align-items:center; gap:10px; }
+    
+    .brand-badge{ 
+      width:50px; 
+      height:50px; 
+      border-radius:8px; 
+      flex-shrink: 0; 
+      object-fit: cover; 
+    }
+
+    h1{ margin:0; font-size:14px; letter-spacing:0.2px; }
+    .subtitle{ margin:0; font-size:10px; color: var(--md-muted); }
+
+    .page{ flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+    .frame{
+      flex: 1;
+      background: var(--md-bg);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .frame-header{
+      padding: 10px 16px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfffd 100%);
+      border-bottom:1px solid var(--md-border);
+    }
+    .frame-header .hint{ font-size:11px; color: var(--md-muted); margin-bottom: 2px; }
+
+    #messages{
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px;
+      background: #FFFFFF;
+    }
+    .msg-row{ display:flex; margin: 10px 0; }
+    .msg-row.user{ justify-content:flex-end; }
+    .msg-row.ia{ justify-content:flex-start; }
+    .bubble{
+      max-width: 85%;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--md-border);
+      font-size:13px;
+      line-height:1.35;
+      white-space: pre-line;
+    }
+    .bubble.user{ background: rgba(11, 107, 58, 0.08); border-color: rgba(11, 107, 58, 0.25); }
+    .bubble.ia{ background: #F9FAFB; }
+    .bubble .who{ display:block; font-size:11px; color: var(--md-muted); margin-bottom:4px; }
+
+    #cards-section{
+      margin: 0 10px 10px 10px;
+      padding: 10px;
+      border: 1px dashed var(--md-border);
+      border-radius: 12px;
+      background: var(--md-bg);
+      display: none;
+      max-height: 50%; 
+      overflow-y: auto;
+    }
+    #cards-section h2{
+      margin: 0 0 8px 0;
+      text-align: left;
+      color: #111110;
+      font-size: 13px;
+    }
+    .cards-container{
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .card{
+      background-color: var(--md-bg);
+      border: 1px solid var(--md-border);
+      border-radius: 10px;
+      padding: 10px;
+      width: 100%;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+    .card h3{ color: var(--md-green); margin: 0 0 6px 0; font-size: 13px; }
+    .card .lines p{ margin: 4px 0; color: var(--md-text); font-size: 12px; }
+
+    .card .actions{ display:flex; gap: 8px; margin-top: 8px; }
+    .card .actions button{
+      flex: 1;
+      background: var(--md-green);
+      color: white;
+      border: none;
+      padding: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 12px;
+    }
+
+    /* CLASSES DE COR CTA */
+    .btn-avancar { background-color: var(--cta-avancar) !important; color: #ffffff !important; }
+    .btn-voltar { background-color: var(--cta-voltar) !important; color: #ffffff !important; }
+    .btn-remover { background-color: var(--cta-remover) !important; color: #ffffff !important; }
+    .btn-selecionar { background-color: var(--cta-selecionar) !important; color: #ffffff !important; }
+    .btn-individual { background-color: var(--cta-individual) !important; color: #ffffff !important; }
+    .btn-familiar { background-color: var(--cta-familiar) !important; color: #ffffff !important; }
+
+    .select-wrap select{
+      width: 100%;
+      padding: 8px;
+      border: 1px solid var(--md-border);
+      border-radius: 8px;
+      font-size: 13px;
+      outline: none;
+    }
+
+    #cards-footer{
+      margin-top: 10px;
+      display:none;
+      gap: 10px;
+    }
+    .btn-footer{
+      flex: 1;
+      border: 0;
+      border-radius: 10px;
+      padding: 10px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    #btnBack{ background: #EEF2F7; color: #111827; }
+    #btnOk{ background: var(--md-green); color: #fff; }
+
+    .composer{
+      border-top:1px solid var(--md-border);
+      background: var(--md-bg);
+      padding: 12px;
+      display:flex;
+      gap:8px;
+    }
+    #input{
+      flex:1;
+      padding: 10px;
+      border:1px solid var(--md-border);
+      border-radius: 10px;
+      outline:none;
+      font-size:13px;
+    }
+    .btn-primary{ border:0; border-radius:10px; padding: 0 15px; background: var(--md-green); color:#fff; font-weight: 700; }
+
+    .empty-state{
+      margin: 10px;
+      padding: 12px;
+      border:1px dashed var(--md-border);
+      border-radius: 10px;
+      color: var(--md-muted);
+      font-size: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="marvel-device">
+    <div class="screen-container">
+      
+      <div class="topbar">
+        <div class="topbar-inner">
+          <div class="brand">
+            <img src="{{ url_for('static', filename='logo.png') }}" class="brand-badge" alt="Logo">
+            <div>
+              <h1>Kari - MaterDei</h1>
+              <p class="subtitle">Concierge Familiar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page">
+        <div class="frame">
+          <div class="frame-header">
+            <div class="hint">· Agende consultas para você ou para sua família.</div>
+            <div class="hint">· Consulte seu Status de Saúde</div>
+          </div>
+
+          <div id="chat" style="display: flex; flex-direction: column; flex: 1; overflow: hidden;">
+            <div id="messages"></div>
+
+            <div id="cards-section">
+              <h2 id="cardsTitle">Selecione as opções</h2>
+              <div class="cards-container" id="cards-container"></div>
+
+              <div id="cards-footer">
+                <button id="btnBack" class="btn-footer" onclick="sendMessageByCommand('voltar')">Voltar</button>
+                <button id="btnOk" class="btn-footer" onclick="sendMessageByCommand('ok')">OK</button>
+              </div>
+            </div>
+
+            <div class="empty-state" id="emptyState">
+              Envie uma mensagem para começar.
+            </div>
+
+            <div class="composer">
+              <input type="text" id="input" placeholder="Digite aqui..." />
+              <button class="btn-primary" onclick="sendMessage()">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <script>
+    function escapeHtml(str) {
+      return (str || "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function appendMessage(who, text, type) {
+      const messages = document.getElementById('messages');
+      const row = document.createElement('div');
+      row.className = "msg-row " + (type === "user" ? "user" : "ia");
+
+      const bubble = document.createElement('div');
+      bubble.className = "bubble " + (type === "user" ? "user" : "ia");
+      bubble.innerHTML = `<span class="who">${escapeHtml(who)}</span>${escapeHtml(text)}`;
+
+      row.appendChild(bubble);
+      messages.appendChild(row);
+
+      const empty = document.getElementById("emptyState");
+      if (empty) empty.style.display = "none";
+
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function setCardsTitle(intent) {
+      const cardsTitle = document.getElementById("cardsTitle");
+      if (!cardsTitle) return;
+      cardsTitle.textContent = (intent === "mostrar_meus_agendamentos") ? "Seus agendamentos" : "Selecione as opções";
+    }
+
+    function shouldShowFooter(intent, cards) {
+      const showForIntents = ["iniciar_agendamento_familiar", "coletar_dados_agendamento", "confirmar_agendamento_familiar"];
+      if (!cards || cards.length === 0) return false;
+      return showForIntents.includes(intent);
+    }
+
+    async function sendMessage() {
+      const input = document.getElementById('input');
+      const message = input.value;
+      if (!message) return;
+
+      appendMessage("Você", message, "user");
+
+      try {
+          const response = await fetch('/chat', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({message})
+          });
+          const data = await response.json();
+          processResponse(data);
+      } catch(e) {
+          console.log("Sem backend detectado.");
+      }
+
+      input.value = '';
+    }
+
+    function processResponse(data) {
+      const intent = (data.intent || "");
+      const iaText = (data.resposta_alencarina || "");
+
+      if (intent === "mostrar_meus_agendamentos" && Array.isArray(data.cards) && data.cards.length > 0) {
+        appendMessage("Kari", "Segue no painel abaixo.", "ia");
+      } else {
+        appendMessage("Kari", iaText, "ia");
+      }
+
+      setCardsTitle(intent);
+      renderCards(data.cards, intent);
+    }
+
+    function renderCards(cards, intent) {
+      const cardsSection = document.getElementById('cards-section');
+      const cardsContainer = document.getElementById('cards-container');
+      const cardsFooter = document.getElementById('cards-footer');
+
+      if (!cards || cards.length === 0) {
+        cardsSection.style.display = 'none';
+        cardsFooter.style.display = 'none';
+        return;
+      }
+
+      cardsContainer.innerHTML = '';
+
+      cards.forEach((card) => {
+        const cardDiv = document.createElement('div');
+        cardDiv.className = 'card';
+
+        const title = document.createElement('h3');
+        title.textContent = card.title || "";
+        cardDiv.appendChild(title);
+
+        const linesDiv = document.createElement('div');
+        linesDiv.className = "lines";
+        (card.lines || []).forEach(line => {
+          const p = document.createElement("p");
+          p.textContent = line;
+          linesDiv.appendChild(p);
+        });
+        cardDiv.appendChild(linesDiv);
+
+        if (card.select && Array.isArray(card.select.options)) {
+          const wrap = document.createElement("div");
+          wrap.className = "select-wrap";
+          const sel = document.createElement("select");
+          const opt0 = document.createElement("option");
+          opt0.value = "";
+          opt0.textContent = card.select.placeholder || "Clique para escolher";
+          sel.appendChild(opt0);
+
+          (card.select.options || []).forEach(opt => {
+            const o = document.createElement("option");
+            o.value = opt;
+            o.textContent = opt;
+            sel.appendChild(o);
+          });
+
+          sel.addEventListener("change", (e) => {
+            const value = (e.target.value || "").trim();
+            if (!value) return;
+            sendMessageByCommand((card.select.commandPrefix || "") + value);
+          });
+          wrap.appendChild(sel);
+          cardDiv.appendChild(wrap);
+        }
+
+        const actions = (card.actions || []);
+        if (actions.length > 0) {
+          const actionsDiv = document.createElement("div");
+          actionsDiv.className = "actions";
+          actions.forEach(action => {
+            const btn = document.createElement("button");
+            btn.textContent = action.label || "Selecionar";
+            
+            if (action.css_class) btn.classList.add(action.css_class);
+
+            btn.addEventListener("click", () => sendMessageByCommand(action.command || ""));
+            actionsDiv.appendChild(btn);
+          });
+          cardDiv.appendChild(actionsDiv);
+        }
+        cardsContainer.appendChild(cardDiv);
+      });
+
+      cardsSection.style.display = 'block';
+      
+      setTimeout(() => {
+        cardsSection.scrollTop = 0;
+      }, 10);
+      
+      cardsFooter.style.display = shouldShowFooter(intent, cards) ? 'flex' : 'none';
+
+      const messages = document.getElementById('messages');
+      messages.scrollTop = messages.scrollHeight;
+    }
+
+    function sendMessageByCommand(command) {
+      document.getElementById('input').value = command;
+      sendMessage();
+    }
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Enter") {
+        const active = document.activeElement;
+        if (active && active.id === "input") sendMessage();
+      }
+    });
+  </script>
+</body>
+</html>
